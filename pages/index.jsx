@@ -1,5 +1,6 @@
-import Head from 'next/head'
-import Image from 'next/image'
+import Head from "next/head";
+import Image from "next/image";
+import Index from "../components/OurFields";
 
 export default function Home() {
   return (
@@ -15,9 +16,8 @@ export default function Home() {
         />
       </Head>
       <main className="bg-gdsc-background font-IBM-Plex">
-      <h1>Hello</h1>
+        <Index />
       </main>
     </>
-      
   );
 }
