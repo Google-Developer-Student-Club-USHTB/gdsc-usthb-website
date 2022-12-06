@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import OurProjects from '../components/OurProjects';
+import Contactus from '../components/ContactUs';
+
 export default function Home() {
   return (
     <>
@@ -14,9 +15,10 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
-      <main className="bg-gdsc-background font-IBM-Plex">
-      <OurProjects/>
-      </main>
+
+     <main className='bg-gdsc-background'>
+     <Contactus/>
+     </main>
     </>
       
   );
