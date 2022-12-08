@@ -4,6 +4,7 @@ import Hero from '../components/Hero/Hero';
 import Contactus from '../components/ContactUs';
 import OurProjects from '../components/OurProjects';
 import TrustedBy from '../components/Trustedby';
+import FAQ from '../components/FAQ'
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       <Hero/>
       <OurProjects/>
       <TrustedBy/>
+      <FAQ />
       <Contactus/>
      </main>
 
