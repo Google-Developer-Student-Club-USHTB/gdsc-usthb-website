@@ -7,8 +7,9 @@ module.exports = {
     theme: {
         screens: {
             "sm": "650px",
-            "md": "775px",
             "lg": "1024px",
+            "2xl": "1920px"
+
         },
         colors: {
             "gdsc-red": "#EA4335",
@@ -24,6 +25,5 @@ module.exports = {
         },
         extend: {},
     },
-  },
-  plugins: [],
-};
+    plugins: [],
+}

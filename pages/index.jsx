@@ -1,15 +1,7 @@
-
-import Head from 'next/head'
-import Image from 'next/image'
-import Contactus from '../components/ContactUs';
-
-
 import Head from 'next/head';
 import Image from 'next/image';
 import Hero from '../components/Hero/Hero';
-
-import Head from 'next/head';
-import Image from 'next/image';
+import Contactus from '../components/ContactUs';
 import OurProjects from '../components/OurProjects';
 import TrustedBy from '../components/Trustedby';
 
@@ -27,19 +19,13 @@ export default function Home() {
         />
       </Head>
 
-
-     <main className='bg-gdsc-background'>
-     <Contactus/>
-     </main>
-
-      <main className="bg-gdsc-background font-IBM-Plex">
-
+     <main className='bg-gdsc-background font-IBM-Plex'>
+      <Hero/>
       <OurProjects/>
       <TrustedBy/>
-        <Hero />
-        <OurProjects />
+      <Contactus/>
+     </main>
 
-      </main>
 
     </>
   );

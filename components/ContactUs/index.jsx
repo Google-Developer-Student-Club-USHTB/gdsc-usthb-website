@@ -4,7 +4,7 @@ import Title from '../shared/title';
 const Contactus = () => {
     console.log(bg);
     return ( 
-        <div  className=" w-full overflow-hidden font-IBM-Plex">
+        <div  className=" w-full overflow-hidden font-IBM-Plex py-10">
  <Title title={'Contact Us'} image={bg.src}/>
 
  <div className="p-4">

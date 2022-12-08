@@ -5,7 +5,7 @@ const Image=new URL("../../assets/we are trusted by.png",import.meta.url)
 
 const TrustedBy = () => {
     return (
-        <div className='trusted-by text-center rounded-xl px-0.5 mt-16 relative z-0'>
+        <div className='trusted-by text-center rounded-xl px-2 mt-16 relative z-0'>
             {/* pseudo element */}
             <div className="before" style={
                 {
