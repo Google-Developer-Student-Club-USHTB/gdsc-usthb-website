@@ -1,6 +1,10 @@
-import Head from "next/head";
-import Image from "next/image";
-import Index from "../components/OurFields";
+import Head from 'next/head';
+import Image from 'next/image';
+import Hero from '../components/Hero/Hero';
+import Contactus from '../components/ContactUs';
+import OurProjects from '../components/OurProjects';
+import TrustedBy from '../components/Trustedby';
+import AboutUs from '../components/AboutUs'
 
 export default function Home() {
   return (
@@ -15,9 +19,15 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
-      <main className="bg-gdsc-background font-IBM-Plex">
-        <Index />
-      </main>
+
+     <main className='bg-gdsc-background font-IBM-Plex'>
+      <Hero/>
+      <OurProjects/>
+      <TrustedBy/>
+      <Contactus/>
+     </main>
+
+
     </>
   );
 }

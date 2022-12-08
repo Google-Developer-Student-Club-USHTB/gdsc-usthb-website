@@ -17,15 +17,35 @@ export const events = [{
 export const projects = [{
         title: " eventea ",
         link: "",
-        date: "",
+        desc: "",
     },
     {
         title: " eventea ",
         link: "",
-        date: "",
+        desc: "",
     }, {
         title: " eventea ",
         link: "",
-        date: ""
+        desc: ""
+    }
+]
+
+export const OurTeam = [{
+        name: "Brahimi Hazem",
+        role: "Lead",
+        linkedin: "",
+        email: "",
+        github: "",
+        desc: ""
+
+    },
+    {
+        name: "Khemissi Maroua",
+        role: "Co-Lead",
+        linkedin: "",
+        email: "",
+        github: "",
+        desc: ""
+
     }
 ]
