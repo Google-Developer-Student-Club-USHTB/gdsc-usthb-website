@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-.BG_OurProjects{
-    background-image: url('../assets/mobile-dev-project.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+.BG_OurProjects {
+  background-image: url('../assets/mobile-dev-project.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
