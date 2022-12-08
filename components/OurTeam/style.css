@@ -142,11 +142,13 @@ img.angles {
 .leader-card:hover .social-media-icons .social-med {
   color: white;
 }
-.leader-card:hover .front-leader-card {
-  transform: translate(0, -90px);
-}
-.leader-card:hover .back-leader-card {
-  transform: translate(0, 80px);
+@media screen and (min-width: 500px) {
+  .leader-card:hover .front-leader-card {
+    transform: translate(0, -90px);
+  }
+  .leader-card:hover .back-leader-card {
+    transform: translate(0, 80px);
+  }
 }
 .leader-card .back-leader-card,
 .leader-card .angles,
