@@ -1,5 +1,9 @@
-import Head from 'next/head'
-import Image from 'next/image'
+import Head from 'next/head';
+import Image from 'next/image';
+import Hero from '../components/Hero/Hero';
+
+import Head from 'next/head';
+import Image from 'next/image';
 import OurProjects from '../components/OurProjects';
 import TrustedBy from '../components/Trustedby';
 export default function Home() {
@@ -16,10 +20,13 @@ export default function Home() {
         />
       </Head>
       <main className="bg-gdsc-background font-IBM-Plex">
+
       <OurProjects/>
       <TrustedBy/>
+        <Hero />
+        <OurProjects />
+
       </main>
     </>
-      
   );
 }
