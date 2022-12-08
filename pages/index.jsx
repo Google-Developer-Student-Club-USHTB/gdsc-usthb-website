@@ -1,3 +1,9 @@
+
+import Head from 'next/head'
+import Image from 'next/image'
+import Contactus from '../components/ContactUs';
+
+
 import Head from 'next/head';
 import Image from 'next/image';
 import Hero from '../components/Hero/Hero';
@@ -6,6 +12,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import OurProjects from '../components/OurProjects';
 import TrustedBy from '../components/Trustedby';
+
 export default function Home() {
   return (
     <>
@@ -19,6 +26,12 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
+
+
+     <main className='bg-gdsc-background'>
+     <Contactus/>
+     </main>
+
       <main className="bg-gdsc-background font-IBM-Plex">
 
       <OurProjects/>
@@ -27,6 +40,7 @@ export default function Home() {
         <OurProjects />
 
       </main>
+
     </>
   );
 }
