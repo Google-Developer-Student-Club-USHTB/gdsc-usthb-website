@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Hero from '../components/Hero/Hero';
+import AboutGDSC from '../components/AboutGdsc';
 import Contactus from '../components/ContactUs';
 import OurProjects from '../components/OurProjects';
 import OurEvents from '../components/OurEvents';
@@ -26,6 +27,7 @@ export default function Home() {
 
      <main className='bg-gdsc-background font-IBM-Plex'>
      <div className='pb-10'><Hero/></div>
+      <AboutGDSC />
       <AboutUs />
       <OurField/>
       <OurEvents/>
