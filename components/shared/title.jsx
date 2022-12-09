@@ -17,3 +17,4 @@ const Title = ({title,image}) => {
 }
  
 export default Title;
+

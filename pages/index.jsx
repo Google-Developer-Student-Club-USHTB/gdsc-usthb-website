@@ -1,3 +1,5 @@
+
+import OurEvents from "../components/OurEvents";
 import Head from 'next/head'
 import Image from 'next/image'
 import OurProjects from '../components/OurProjects';
@@ -20,6 +22,5 @@ export default function Home() {
       <OurProjects/>
       </main>
     </>
-      
   );
 }
