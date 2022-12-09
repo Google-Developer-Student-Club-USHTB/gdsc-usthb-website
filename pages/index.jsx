@@ -1,9 +1,12 @@
 
-import OurEvents from "../components/OurEvents";
-import Head from 'next/head'
-import Image from 'next/image'
+import Head from 'next/head';
+import Image from 'next/image';
+import Hero from '../components/Hero/Hero';
+import Contactus from '../components/ContactUs';
 import OurProjects from '../components/OurProjects';
-import AboutUs from '../components/AboutUs';
+import TrustedBy from '../components/Trustedby';
+import Footer from '../components/Footer';
+
 export default function Home() {
   return (
     <>
@@ -17,10 +20,14 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
-      <main className="bg-gdsc-background font-IBM-Plex">
-      <AboutUs/>
+
+     <main className='bg-gdsc-background font-IBM-Plex'>
+      {/* <div className='pb-10'><Hero/></div>
       <OurProjects/>
-      </main>
+      <TrustedBy/>
+      <Contactus/> */}
+      <Footer />
+     </main>
     </>
   );
 }
