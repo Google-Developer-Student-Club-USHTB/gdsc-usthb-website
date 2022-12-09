@@ -1,3 +1,4 @@
+
 import Head from 'next/head';
 import Image from 'next/image';
 import Hero from '../components/Hero/Hero';
@@ -5,6 +6,7 @@ import Contactus from '../components/ContactUs';
 import OurProjects from '../components/OurProjects';
 import TrustedBy from '../components/Trustedby';
 import Footer from '../components/Footer';
+
 export default function Home() {
   return (
     <>
@@ -26,8 +28,6 @@ export default function Home() {
       <Contactus/> */}
       <Footer />
      </main>
-
-
     </>
   );
 }
