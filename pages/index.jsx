@@ -3,7 +3,12 @@ import Image from 'next/image';
 import Hero from '../components/Hero/Hero';
 import Contactus from '../components/ContactUs';
 import OurProjects from '../components/OurProjects';
+import OurEvents from '../components/OurEvents';
 import TrustedBy from '../components/Trustedby';
+import FAQ from '../components/FAQ'
+import AboutUs from '../components/AboutUs'
+import OurField from '../components/OurFields'
+import Footer from '../components/Footer'
 
 export default function Home() {
   return (
@@ -20,10 +25,16 @@ export default function Home() {
       </Head>
 
      <main className='bg-gdsc-background font-IBM-Plex'>
-      <Hero/>
+     <div className='pb-10'><Hero/></div>
+      <AboutUs />
+      <OurField/>
+      <OurEvents/>
       <OurProjects/>
       <TrustedBy/>
+      <FAQ/>
       <Contactus/>
+      <Footer/>
+    
      </main>
 
 

@@ -7,6 +7,7 @@ module.exports = {
     theme: {
         screens: {
             "sm": "650px",
+            "md": "750px",
             "lg": "1024px",
             "2xl": "1920px"
 
@@ -23,7 +24,11 @@ module.exports = {
         fontFamily: {
             "IBM-Plex": ["IBM Plex Sans", "sans-serif"],
         },
-        extend: {},
+        extend: {
+            borderRadius: {
+                'large': '40px'
+            },
+        },
     },
     plugins: [],
 }
