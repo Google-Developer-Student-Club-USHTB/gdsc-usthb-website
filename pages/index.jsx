@@ -1,7 +1,9 @@
-import Head from "next/head";
-import Image from "next/image";
-import OurEvents from "../components/OurEvents";
 
+import OurEvents from "../components/OurEvents";
+import Head from 'next/head'
+import Image from 'next/image'
+import OurProjects from '../components/OurProjects';
+import AboutUs from '../components/AboutUs';
 export default function Home() {
   return (
     <>
@@ -16,7 +18,8 @@ export default function Home() {
         />
       </Head>
       <main className="bg-gdsc-background font-IBM-Plex">
-        <OurEvents />
+      <AboutUs/>
+      <OurProjects/>
       </main>
     </>
   );
