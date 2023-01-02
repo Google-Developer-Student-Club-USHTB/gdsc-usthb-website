@@ -6,6 +6,7 @@ import OurProjects from '../components/OurProjects';
 import OurEvents from '../components/OurEvents';
 import TrustedBy from '../components/Trustedby';
 import FAQ from '../components/FAQ'
+import OurTeam from '../components/OurTeam'
 import AboutUs from '../components/AboutUs'
 import OurField from '../components/OurFields'
 import Footer from '../components/Footer'
@@ -22,6 +23,9 @@ export default function Home() {
           href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
           rel="stylesheet"
         />
+        <link rel="stylesheet" href="/styles/globals.css" />
+        {/* font awesome */}
+        <script src="https://kit.fontawesome.com/c2b7b2c34b.js" crossorigin="anonymous"></script>
       </Head>
 
      <main className='bg-gdsc-background font-IBM-Plex'>
@@ -29,6 +33,7 @@ export default function Home() {
       <AboutUs />
       <OurField/>
       <OurEvents/>
+      <OurTeam/>
       <OurProjects/>
       <TrustedBy/>
       <FAQ/>

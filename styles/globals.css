@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 .BG_OurProjects {
-    background-image: url('../assets/mobile-dev-project.png');
+    background-image: url("../assets/mobile-dev-project.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -29,4 +29,210 @@
 
 .swiper-button-prev::after {
     display: none;
+}
+
+/* TODO: the tab nav is causing a black border */
+* {
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+}
+
+:root {
+  /* font-size: 62.5%; */
+  /* --primary-blue-color: rgb(66, 134, 245); */
+  --primary-blue-color: #4285f4;
+  --primary-blue-color-2: #356ecb;
+  --leader-card-radious: 30px;
+  --max-width-val: 220px;
+  --transition-delay: 0.5s;
+  --hover-transition-scale: 1.1;
+}
+
+/* body {
+    font-size: 10px;
+} */
+/* General */
+
+.block-inline-display {
+  display: inline-block;
+}
+
+.leaders-nav-btn {
+  margin: 0 5px;
+  height: 10px;
+  width: 55px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 4px -1px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 2px 2px 4px -1px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 2px 2px 4px -1px rgba(0, 0, 0, 0.4);
+  transition: all var(--transition-delay);
+}
+
+.leaders-nav-btn:hover {
+  background-color: var(--primary-blue-color-2);
+  transform: scale(1.1);
+}
+
+.btn {
+  padding: 10px 20px;
+  margin-bottom: 30px;
+  border-radius: 7px;
+  transition: background-color var(--transition-delay),
+    transform var(--transition-delay);
+}
+
+.btn-primary {
+  font-size: 23px;
+  font-weight: 700;
+  color: white;
+  background-color: var(--primary-blue-color);
+  outline: 0;
+  border: 0;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--primary-blue-color-2);
+  transform: scale(var(--hover-transition-scale));
+}
+
+/*
+#temporary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+*/
+
+#leaders-members {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* TODO: it was space-between soo..; */
+  position: relative;
+}
+#leaders-members h2 {
+  font-size: 2rem;
+}
+
+/* TODO: change this element position to make it move with the section 
+    i think its done*/
+.angles {
+  color: var(--primary-blue-color);
+  font-size: 50px;
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  transition: transform var(--transition-delay);
+}
+.angles:hover {
+  transform: rotate(360deg);
+  cursor: pointer;
+}
+.angles-left {
+  left: 30px;
+}
+.angles-right {
+  right: 30px;
+}
+
+#leaders-members-cards {
+  margin: 0 auto;
+  max-width: 1080px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#leaders-members-cards,
+.front-leader-card,
+.back-leader-card {
+  border-radius: var(--leader-card-radious);
+}
+
+.leader-card {
+  /* text-align: center; */
+  max-width: var(--max-width-val);
+  margin: 15px;
+  position: relative;
+}
+
+.leader-card:hover .front-leader-card {
+  color: white;
+  background-color: var(--primary-blue-color);
+}
+.leader-card:hover .member-role,
+.leader-card:hover .social-media-icons i {
+  color: white;
+}
+.leader-card:hover .front-leader-card {
+  transform: translate(0, -90px);
+}
+.leader-card:hover .back-leader-card {
+  transform: translate(0, 80px);
+}
+.leader-card .back-leader-card,
+.leader-card i,
+.member-role,
+.leader-card .front-leader-card {
+  transition: background-color var(--transition-delay),
+    color var(--transition-delay), transform var(--transition-delay);
+}
+
+.front-leader-card {
+  background-color: white;
+  padding: 30px;
+  width: var(--max-width-val);
+  max-width: var(--max-width-val);
+  position: relative; /* just to apply the z-index property*/
+  z-index: 10;
+}
+
+.front-leader-card img {
+  display: inline-block;
+  height: 120px;
+  width: auto;
+  border-radius: 50%;
+}
+.member-name,
+.member-role {
+  font-weight: bold;
+  padding: 5px 0;
+}
+.member-role {
+  color: #3f3d3d;
+}
+
+.social-media-icons {
+  font-size: xx-large;
+  color: var(--primary-blue-color);
+  display: flex;
+  justify-content: space-around;
+}
+
+.back-leader-card {
+  padding: 150px 10px 20px;
+  height: 100%;
+  width: 100%;
+  max-width: var(--max-width-val);
+  /* box-shadow: 5px 5px 5px 5px black; */
+  box-shadow: 0px 13px 30px 1px rgba(0, 0, 0, 0.53);
+  -webkit-box-shadow: 0px 13px 30px 1px rgba(0, 0, 0, 0.53);
+  -moz-box-shadow: 0px 13px 30px 1px rgba(0, 0, 0, 0.53);
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+/* TODO: thats style is temporary ???*/
+#leaders-nav h3 {
+  color: var(--primary-blue-color);
+}
+
+#leaders-nav div:first-child {
+  background-color: var(--primary-blue-color);
 }

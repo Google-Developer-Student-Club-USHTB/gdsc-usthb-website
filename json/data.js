@@ -30,22 +30,24 @@ export const projects = [{
     }
 ]
 
-export const OurTeam = [{
+export const team = [{
         name: "Brahimi Hazem",
         role: "Lead",
-        linkedin: "",
-        email: "",
-        github: "",
-        desc: ""
+        picture: "../assets/pic-rec.png",
+        linkedin: "http://www.linkedin.com",
+        email: "mailto:testEmail@gmail.com",
+        github: "http://www.github.com",
+        desc: "First desc test about the first GDSC leader"
 
     },
     {
         name: "Khemissi Maroua",
         role: "Co-Lead",
-        linkedin: "",
-        email: "",
-        github: "",
-        desc: ""
+        picture: "/assets/pic-rec-2.png",
+        linkedin: "http://www.linkedin.com",
+        email: "mailto:testEmail2@gmail.com",
+        github: "http://www.github.com",
+        desc: "Second desc test about the Second GDSC leader"
 
     }
 ]
